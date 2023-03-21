@@ -8,18 +8,18 @@ int main()
  
 
     // Set up the screen parameters
-    const int screenWidth = 1000;
-    const int screenHeight = 550;
+    const int screenWidth = 400;
+    const int screenHeight = 300;
 
-    Vector2 pos;
-    pos.x = screenWidth / 2;
-    pos.y = screenHeight / 2;
+    Vector2 position;
+    position.x = 12;
+    position.y = 10;
     InitWindow(screenWidth, screenHeight, "twenty-one");
 
     Texture2D mainCharacter = LoadTexture("binary_king.png");
 
     // Set up the grid parameters
-    const int gridSize = 50;
+    const int gridSize = 100;
     const Color gridColor = LIGHTGRAY;
 
 
@@ -29,19 +29,19 @@ int main()
 
         if (IsKeyDown(KEY_LEFT))
         {
-            pos.x -= 10;
+            position.x -= 18;
         }
         if (IsKeyDown(KEY_RIGHT))
         {
-            pos.x += 10;
+            position.x += 18;
         }
         if (IsKeyDown(KEY_UP))
         {
-            pos.y -= 10;
+            position.y -= 18;
         }
         if (IsKeyDown(KEY_DOWN))
         {
-            pos.y += 10;
+            position.y += 18;
         }
 
         BeginDrawing();
@@ -59,7 +59,7 @@ int main()
             DrawLine(i, 0, i, screenHeight, gridColor);
         }
 
-        DrawTexture(mainCharacter, pos.x, pos.y, WHITE);
+        DrawTexture(mainCharacter, position.x, position.y, WHITE);
         EndDrawing();
     }
     UnloadTexture(mainCharacter);
