@@ -17,8 +17,15 @@ void gridLayout()
     DrawText("-", screenWidth/8 - 15, (screenHeight / 3) + 20, 60, BLUE);
     DrawText("/", screenWidth/8 - 20, screenHeight - 70, 60, BLUE);
     DrawText("x", screenWidth/4 + 35, screenHeight / 6 - 30, 60, BLUE);
-    DrawText("/", screenWidth / 4 + 30, screenHeight / 6 + 75, 60, BLUE);
-    DrawText("-", screenWidth / 4 + 35, (screenHeight / 3)*2 + (screenHeight/3)/6 + 10, 60, BLUE);
+    DrawText("/", screenWidth/ 4 + 30, screenHeight / 6 + 75, 60, BLUE);
+    DrawText("-", screenWidth/ 4 + 35, (screenHeight / 3)*2 + (screenHeight/3)/6 + 10, 60, BLUE);
+    DrawText("-", screenWidth/ 4 + 35, (screenHeight / 3)*2 + (screenHeight/3)/6 + 10, 60, BLUE);
+    DrawText("+", (screenWidth/8)*5 - 15, (screenHeight / 6)*1 - 30, 60, BLUE);
+    DrawText("-", (screenWidth/8)*5 - 15, (screenHeight / 6)*3 - 30, 60, BLUE);
+    DrawText("x", (screenWidth / 8)*5 - 15, (screenHeight/6)*5 - 30, 60, BLUE);
+    DrawText("/", (screenWidth / 8) * 7 - 20, (screenHeight / 6) * 1 - 30, 60, BLUE);
+    DrawText("x", (screenWidth / 8) * 7 - 15, (screenHeight / 6) * 3 - 30, 60, BLUE);
+    DrawText("+", (screenWidth / 8) * 7 - 15, (screenHeight / 6) * 5 - 30, 60, BLUE);
 }
 
 //Move function
