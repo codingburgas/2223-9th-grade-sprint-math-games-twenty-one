@@ -9,25 +9,6 @@ const int screenHeight = 300;
 
 
 
-
-
-void gridLayout()
-{
-    DrawText("+", screenWidth/8 - 15, screenHeight/6 - 30, 60, BLUE);
-    DrawText("-", screenWidth/8 - 15, (screenHeight / 3) + 20, 60, BLUE);
-    DrawText("/", screenWidth/8 - 20, screenHeight - 70, 60, BLUE);
-    DrawText("x", screenWidth/4 + 35, screenHeight / 6 - 30, 60, BLUE);
-    DrawText("/", screenWidth/ 4 + 30, screenHeight / 6 + 75, 60, BLUE);
-    DrawText("-", screenWidth/ 4 + 35, (screenHeight / 3)*2 + (screenHeight/3)/6 + 10, 60, BLUE);
-    DrawText("-", screenWidth/ 4 + 35, (screenHeight / 3)*2 + (screenHeight/3)/6 + 10, 60, BLUE);
-    DrawText("+", (screenWidth/8)*5 - 15, (screenHeight / 6)*1 - 30, 60, BLUE);
-    DrawText("-", (screenWidth/8)*5 - 15, (screenHeight / 6)*3 - 30, 60, BLUE);
-    DrawText("x", (screenWidth / 8)*5 - 15, (screenHeight/6)*5 - 30, 60, BLUE);
-    DrawText("/", (screenWidth / 8) * 7 - 20, (screenHeight / 6) * 1 - 30, 60, BLUE);
-    DrawText("x", (screenWidth / 8) * 7 - 15, (screenHeight / 6) * 3 - 30, 60, BLUE);
-    DrawText("+", (screenWidth / 8) * 7 - 15, (screenHeight / 6) * 5 - 30, 60, BLUE);
-}
-
 //Move function
 void move(Vector2 &position)
 {
@@ -67,28 +48,68 @@ int main()
     SetWindowIcon(icon);
     // Set up the grid parameters
     const int gridSize = 100;
-    const Color gridColor = LIGHTGRAY;
 
-    int counter = 0;
+    //Rectangles
+    Rectangle rec[3][4];
+    bool flag = false;
     // Main game loop
     while (!WindowShouldClose())
     {
         move(position);
         BeginDrawing();
-        gridLayout();
-
+        
         ClearBackground(RAYWHITE);
     
-        // Draw horizontal lines
-        for (int i = 0; i < screenHeight; i += gridSize)
+        for (int i = 0; i < 3; i++)
         {
-            DrawLine(0, i, screenWidth, i, gridColor);
+            for (int j = 0; j < 4; j++)
+            {
+                rec[i][j] = {(float)j* screenWidth / 4,(float)i* screenHeight / 3,screenWidth / 4, screenHeight / 3 };
+                DrawRectangleRec(rec[i][j], WHITE);
+                DrawRectangleLinesEx(rec[i][j], 1, BLACK);
+            }
         }
-        // Draw vertical lines
-        for (int i = 0; i < screenWidth; i += gridSize)
+
+        const char* level[3][4] = {
+        "-", "+", "/", "-",
+        "x", "-", "+", "x",
+        "-", "+", "/", "x",
+        };
+        for (int i = 0; i < 3; i++)
         {
-            DrawLine(i, 0, i, screenHeight, gridColor);
+            for (int j = 0; j < 4; j++)
+            {
+                DrawText(level[i][j], rec[i][j].x + (screenWidth / 4) / 2 - 15, rec[i][j].y + (screenHeight / 3) / 2 - 60 / 2, 60, BLUE);
+            }
         }
+        if (IsKeyDown(KEY_ENTER))
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 4; j++)
+                {
+                    if (CheckCollisionPointRec(position, rec[i][j]))
+                    {
+                        flag = true;
+                    }
+                }
+            }
+        }
+
+        if (flag)
+        {
+            cout << "agiowabgjkabg;w";
+        }
+        //// Draw horizontal lines
+        //for (int i = 0; i < screenHeight; i += gridSize)
+        //{
+        //    DrawLine(0, i, screenWidth, i, gridColor);
+        //}
+        //// Draw vertical lines
+        //for (int i = 0; i < screenWidth; i += gridSize)
+        //{
+        //    DrawLine(i, 0, i, screenHeight, gridColor);
+        //}
         DrawTexture(mainCharacter, position.x, position.y, WHITE);
         EndDrawing();
     }
