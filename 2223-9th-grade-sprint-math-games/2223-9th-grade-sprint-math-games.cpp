@@ -7,25 +7,63 @@ using namespace std;
 const int screenWidth = 400;
 const int screenHeight = 300;
 
+
+//Initialize Numbers to be calculated
+unsigned int binNum[3][5] = {
+1, 10, 11, 100, 101,
+110, 111, 1000, 1001, 1010,
+1011, 1100, 1101, 1110, 1111 };
+
+
 void multGame()
 {
+    int firstRandomNum = 0, secondRandomNum = 0;
+    //int multiply = 0, factor = 1;
+    cout << "\nWelcome! Now you have multiply the first binary number that you see with the second one on your screen!" << endl;
+    cout << "Input your answear after the equals sign." << endl;
+    for (int i = GetRandomValue(0, 4); i < 3; i++)
+    {
+        for (int j = GetRandomValue(0, 4); j < 5; j++)
+        {
+            firstRandomNum = binNum[i][j]; 
+            secondRandomNum = binNum[i][j - 1];break;
+        }    
+    }
+    cout << firstRandomNum << " x " << secondRandomNum << " = ";
+    int userInput;
+    cin >> userInput;
 
-    cout << "You are playing game mult game";
+
+
+    //while (secondRandomNum != 0)
+    //{
+    //    digit = secondRandomNum % 10;
+    //    if (digit == 1)
+    //    {
+    //        firstRandomNum = firstRandomNum * factor;
+    //        multiply = binaryproduct(firstRandomNum, multiply);
+    //    }
+    //    else
+    //        binary1 = binary1 * factor;
+    //    binary2 = binary2 / 10;
+    //    factor = 10;
+    //}
+
 }
 
 void subGame()
 {
-    cout << "You are playing sub";
+
 }
 
 void addGame()
 {
-    cout << "You are playing add";
+
 }
 
 void divGame()
 {
-    cout << "You are playing div";
+
 }
 
 //Move function
