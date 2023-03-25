@@ -7,7 +7,26 @@ using namespace std;
 const int screenWidth = 400;
 const int screenHeight = 300;
 
+void multGame()
+{
 
+    cout << "You are playing game mult game";
+}
+
+void subGame()
+{
+    cout << "You are playing sub";
+}
+
+void addGame()
+{
+    cout << "You are playing add";
+}
+
+void divGame()
+{
+    cout << "You are playing div";
+}
 
 //Move function
 void move(Vector2 &position)
@@ -15,22 +34,22 @@ void move(Vector2 &position)
     if (IsKeyDown(KEY_LEFT) || IsKeyDown(KEY_A))
     {
         if(position.x > 0)
-            position.x -= 12;
+            position.x -= 10;
     }
     if (IsKeyDown(KEY_RIGHT) || IsKeyDown(KEY_D))
     {
         if(position.x < screenWidth - 90)
-            position.x += 12;
+            position.x += 10;
     }
     if (IsKeyDown(KEY_UP) || IsKeyDown(KEY_W))
     {
         if (position.y > 0)
-            position.y -= 12;
+            position.y -= 10;
     }
     if (IsKeyDown(KEY_DOWN) || IsKeyDown(KEY_S))
     {
         if(position.y < screenHeight - 75)
-            position.y += 12;
+            position.y += 10;
     }
 }
 //Main function
@@ -46,13 +65,11 @@ int main()
     Texture2D mainCharacter = LoadTexture("images/binary_king.png");
     Image icon = LoadImage("images/icon.png");
     SetWindowIcon(icon);
-    // Set up the grid parameters
-    const int gridSize = 100;
 
     //Rectangles
     Rectangle rec[3][4];
-    bool flag = false;
-    // Main game loop
+    bool flagDiv = false, flagMult = false, flagSub = false, flagAdd = false;
+    //Main game loop
     while (!WindowShouldClose())
     {
         move(position);
@@ -90,26 +107,27 @@ int main()
                 {
                     if (CheckCollisionPointRec(position, rec[i][j]))
                     {
-                        flag = true;
+                        if (level[i][j] == "-")
+                        {
+                            subGame();
+                        }
+                        else if (level[i][j] == "+")
+                        {
+                            addGame();
+                        }
+                        else if (level[i][j] == "x")
+                        {
+                            multGame();
+                        }
+                        else if (level[i][j] == "/")
+                        {
+                            divGame();
+                        }
                     }
                 }
             }
         }
 
-        if (flag)
-        {
-            cout << "agiowabgjkabg;w";
-        }
-        //// Draw horizontal lines
-        //for (int i = 0; i < screenHeight; i += gridSize)
-        //{
-        //    DrawLine(0, i, screenWidth, i, gridColor);
-        //}
-        //// Draw vertical lines
-        //for (int i = 0; i < screenWidth; i += gridSize)
-        //{
-        //    DrawLine(i, 0, i, screenHeight, gridColor);
-        //}
         DrawTexture(mainCharacter, position.x, position.y, WHITE);
         EndDrawing();
     }
