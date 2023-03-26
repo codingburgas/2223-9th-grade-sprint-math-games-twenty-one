@@ -139,7 +139,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="2223-9th-grade-sprint-math-games.cpp" />
+    <ClCompile Include="Addition.cpp" />
+    <ClCompile Include="Division.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Mult.cpp" />
+    <ClCompile Include="Substract.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Addition.h" />
+    <ClInclude Include="Division.h" />
+    <ClInclude Include="Main.h" />
+    <ClInclude Include="Mult.h" />
+    <ClInclude Include="Substract.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
