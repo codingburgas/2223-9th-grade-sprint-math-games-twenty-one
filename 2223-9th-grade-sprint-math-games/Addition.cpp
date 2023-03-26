@@ -52,6 +52,7 @@ void addGame()
     else
     {
         cout << "The answear is incorrect! Try again!" << endl;
+        system("pause");
         addGame();
     }
 }

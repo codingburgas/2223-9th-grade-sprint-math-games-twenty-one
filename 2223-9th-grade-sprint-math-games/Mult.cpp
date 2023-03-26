@@ -1,7 +1,6 @@
 #include <iostream>
 #include <raylib.h>
 #include <stdlib.h>
-#include <stdlib.h>
 using namespace std;
 
 
@@ -11,29 +10,22 @@ using namespace std;
 
 
 //Initialize Numbers to be calculated
-const int binNum[3][5] = {
+const int binNum[15] = 
+{
 1, 10, 11, 100, 101,
 110, 111, 1000, 1001, 1010,
-1011, 1100, 1101, 1110, 1111 };
+1011, 1100, 1101, 1110, 1111 
+};
 
 
 //Function for multiplying
 void multGame()
 {
     system("CLS");
-    int firstRandomNum = 0, secondRandomNum = 0;
-
+    int firstRandomNum = binNum[GetRandomValue(0, 15)];
+    int secondRandomNum = binNum[GetRandomValue(0, 15)];
     cout << "\nWelcome! Now you have to multiply the first binary number that you see with the second one on your screen!" << endl;
     cout << "Input your answear after the equals sign." << endl;
-
-    for (int i = GetRandomValue(0, 4); i < 3; i++)
-    {
-        for (int j = GetRandomValue(0, 4); j < 5; j++)
-        {
-            firstRandomNum = binNum[i][j];
-            secondRandomNum = binNum[i][j - 1]; break;
-        }
-    }
 
     cout << firstRandomNum << " x " << secondRandomNum << " = ";
     int userInput;
