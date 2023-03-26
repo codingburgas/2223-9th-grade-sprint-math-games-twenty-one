@@ -1,9 +1,10 @@
 #include <iostream>
 #include <raylib.h>
+#include <stdlib.h>
 
 //Include header files
 #include "Mult.h"
-#include "Division.h"
+#include "Convert.h"
 #include "Substract.h"
 #include "Addition.h"
 
@@ -11,8 +12,8 @@ using namespace std;
 
 
 // Set up the screen parameters
-float screenWidth = 400.0;
-float screenHeight = 300.0;
+const int screenWidth = 400.0;
+const int screenHeight = 300.0;
 
 
 
@@ -66,11 +67,11 @@ int main()
 
     //Grid layout
     Rectangle rec[3][4];
-    bool flagDiv = false, flagMult = false, flagSub = false, flagAdd = false;
+    bool flagCon = false, flagMult = false, flagSub = false, flagAdd = false;
     const char* level[3][4] = {
-    "-", "+", "/", "-",
+    "-", "+", "C", "-",
     "x", "-", "+", "x",
-    "-", "+", "/", "x",
+    "-", "+", "C", "x",
     };
 
     //Initialize Numbers to be calculated
@@ -126,9 +127,9 @@ int main()
                         {
                             flagMult = true;
                         }
-                        else if (level[i][j] == "/")
+                        else if (level[i][j] == "C")
                         {
-                            flagDiv = true;
+                            flagCon = true;
                         }
                     }
                 }
@@ -145,10 +146,10 @@ int main()
             subGame();
             flagSub = false;
         }
-        if (flagDiv)
+        if (flagCon)
         {
-            divGame();
-            flagDiv = false;
+            conGame();
+            flagCon = false;
         }
         if (flagAdd)
         {

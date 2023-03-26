@@ -21,7 +21,7 @@
     <ClCompile Include="Mult.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Division.cpp">
+    <ClCompile Include="Convert.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Substract.cpp">
@@ -35,7 +35,7 @@
     <ClInclude Include="Addition.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Division.h">
+    <ClInclude Include="Convert.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Mult.h">

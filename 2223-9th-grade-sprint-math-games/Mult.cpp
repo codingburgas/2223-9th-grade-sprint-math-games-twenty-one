@@ -1,5 +1,7 @@
 #include <iostream>
 #include <raylib.h>
+#include <stdlib.h>
+#include <stdlib.h>
 using namespace std;
 
 
@@ -18,7 +20,7 @@ const int binNum[3][5] = {
 //Function for multiplying
 void multGame()
 {
-
+    system("CLS");
     int firstRandomNum = 0, secondRandomNum = 0;
 
     cout << "\nWelcome! Now you have to multiply the first binary number that you see with the second one on your screen!" << endl;
@@ -36,7 +38,6 @@ void multGame()
     cout << firstRandomNum << " x " << secondRandomNum << " = ";
     int userInput;
     cin >> userInput;
-
     int result = 0, factor = 1;
     while (secondRandomNum != 0)
     {

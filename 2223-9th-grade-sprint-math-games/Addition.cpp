@@ -1,14 +1,16 @@
 #include <iostream>
 #include <raylib.h>
+#include <stdlib.h>
 using namespace std;
 
 #include "Main.h"
 
 //Initialize Numbers to be calculated
-const int binNum[3][5] = {
+const int binNum[15] = {
 1, 10, 11, 100, 101,
 110, 111, 1000, 1001, 1010,
-1011, 1100, 1101, 1110, 1111 };
+1011, 1100, 1101, 1110, 1111 
+};
 
 
 
@@ -36,16 +38,10 @@ int additionNums(int binary1, int binary2)
 
 void addGame()
 {
-    int num1 = 0, num2 = 0;
-    for (int i = GetRandomValue(0, 4); i < 3; i++)
-    {
-        for (int j = GetRandomValue(0, 4); j < 5; j++)
-        {
-            num1 = binNum[i][j];
-            num2 = binNum[i][j - 1]; break;
-        }
-    }
-    cout << "Welcome to addition! Enter your answear: ";
+    system("CLS");
+    int num1 = binNum[GetRandomValue(0, 15)];
+    int num2 = binNum[GetRandomValue(0, 15)];
+    cout << "Welcome to addition! Enter your answear: " << endl;
     cout << num1 << " + " << num2 << " = ";
     int input;
     cin >> input;

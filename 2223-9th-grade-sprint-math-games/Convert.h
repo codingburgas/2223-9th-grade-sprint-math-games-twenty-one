@@ -2,5 +2,6 @@
 
 #include <iostream>
 #include <raylib.h>
+#include <stdlib.h>
 
-void divGame();
+void conGame();

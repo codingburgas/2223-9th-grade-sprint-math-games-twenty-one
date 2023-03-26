@@ -140,14 +140,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Addition.cpp" />
-    <ClCompile Include="Division.cpp" />
+    <ClCompile Include="Convert.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Mult.cpp" />
     <ClCompile Include="Substract.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Addition.h" />
-    <ClInclude Include="Division.h" />
+    <ClInclude Include="Convert.h" />
     <ClInclude Include="Main.h" />
     <ClInclude Include="Mult.h" />
     <ClInclude Include="Substract.h" />
