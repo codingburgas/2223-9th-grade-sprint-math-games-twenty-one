@@ -16,87 +16,7 @@ float screenHeight = 300.0;
 
 
 
-//
-//void multGame()
-//{
-//
-//    int firstRandomNum = 0, secondRandomNum = 0;
-//
-//    cout << "\nWelcome! Now you have multiply the first binary number that you see with the second one on your screen!" << endl;
-//    cout << "Input your answear after the equals sign." << endl;
-//
-//    for (int i = GetRandomValue(0, 4); i < 3; i++)
-//    {
-//        for (int j = GetRandomValue(0, 4); j < 5; j++)
-//        {
-//            firstRandomNum = binNum[i][j]; 
-//            secondRandomNum = binNum[i][j - 1];break;
-//        }    
-//    }
-//
-//    cout << firstRandomNum << " x " << secondRandomNum << " = ";
-//    int userInput;
-//    cin >> userInput;
-//
-//    int result = 0, factor = 1;
-//    while (secondRandomNum != 0)
-//    {
-//        int digit = secondRandomNum % 10;
-//        if (digit == 1)
-//        {
-//            firstRandomNum = firstRandomNum * factor;
-//            result = addGame(firstRandomNum, result);
-//        }
-//        else
-//        {
-//            firstRandomNum = firstRandomNum * factor;
-//        }
-//        secondRandomNum = secondRandomNum / 10;
-//        factor = 10;
-//    }
-//
-//
-//    if (userInput == result)
-//    {
-//        cout << "Your answear is correct! Congratulations!" << endl;
-//    }
-//    else
-//    {
-//        cout << "The answear is incorrect! Try again!" << endl;
-//        multGame();
-//    }
-//}
-//
-//void subGame()
-//{
-//    cout << "You are playing subGame" << endl;
-//}
-//
-//int addGame(int binary1, int binary2)
-//{
-//    cout << "You are playing addition" << endl;
-//    int i = 0, remainder = 0, sum[20];
-//    int binaryprod = 0;
-//
-//    while (binary1 != 0 || binary2 != 0)
-//    {
-//        sum[i++] = (binary1 % 10 + binary2 % 10 + remainder) % 2;
-//        remainder = (binary1 % 10 + binary2 % 10 + remainder) / 2;
-//        binary1 = binary1 / 10;
-//        binary2 = binary2 / 10;
-//    }
-//    if (remainder != 0)
-//        sum[i++] = remainder;
-//    --i;
-//    while (i >= 0)
-//        binaryprod = binaryprod * 10 + sum[i--];
-//    return binaryprod;
-//}
-//
-//void divGame()
-//{
-//    cout << "You are playing division" << endl;
-//}
+
 
 //Move function
 void move(Vector2 &position)
@@ -232,29 +152,7 @@ int main()
         }
         if (flagAdd)
         {
-            int num1 = 0, num2 = 0;
-            for (int i = GetRandomValue(0, 4); i < 3; i++)
-            {
-                for (int j = GetRandomValue(0, 4); j < 5; j++)
-                {
-                    num1 = binNum[i][j];
-                    num2 = binNum[i][j - 1]; break;
-                }
-            }
-            cout << "Welcome to addition! Enter your answear: ";
-            cout << num1 << " + " << num2 << " = " << endl;
-                int input;
-                cin >> input;
-                if (addGame(num1, num2) == input)
-                {
-                    cout << "The answear is correct!";
-                }
-                else
-                {
-                    cout << "The answear is incorrect! Try again!";
-                    flagAdd = true;
-                }
-            
+            addGame();
             flagAdd = false;
         }
 

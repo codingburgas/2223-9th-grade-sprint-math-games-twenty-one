@@ -32,7 +32,7 @@
 </p>
 <hr>
 <h2 align = "center">🧒 Our Team</h2>
- <a href = "https://github.com/TYAtanasov21"> Todor Atanasov </a> [Scrum trainer<br>
+ <a href = "https://github.com/TYAtanasov21"> Todor Atanasov </a> [Scrum trainer]<br>
  <a href = "https://github.com/IDDochev21"> Ivan Dochev </a> [Back-end Developer]<br>
  <a href = "https://github.com/AYKupenov21"> Apostol Kupenov </a> [Back-end Developer]<br>
  <a href = "https://github.com/TSMadzharov21"> Teodor Madjarov </a> [QA engineer]<br>

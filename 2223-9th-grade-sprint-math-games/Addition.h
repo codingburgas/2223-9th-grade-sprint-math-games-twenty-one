@@ -3,4 +3,5 @@
 #include <iostream>
 #include <raylib.h>
 
-int addGame(int, int);
+int additionNums(int, int);
+void addGame();
