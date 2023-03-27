@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 using namespace std;
-
+//Initialize Numbers to be calculated
 const int binNum[15] = 
 {
 1, 10, 11, 100, 101,
@@ -12,6 +12,7 @@ const int binNum[15] =
 1011, 1100, 1101, 1110, 1111 
 };
 
+//Function to convert numbers
 void conGame()
 {
     system("CLS");
@@ -23,7 +24,7 @@ void conGame()
     cout << "Enter the number in decimal: ";
     cin >> userInput;
     int result = 0, counter = 0, remainder=0;
-
+    //Algoroth for converting numbers
     while (randomNum != 0) {
         remainder = randomNum % 10;
         randomNum /= 10;

@@ -4,12 +4,14 @@
 #include <stdlib.h>
 using namespace std;
 
+
+//Initialize Numbers to be calculated
 const int binNum[15] = {
 1, 10, 11, 100, 101,
 110, 111, 1000, 1001, 1010,
 1011, 1100, 1101, 1110, 1111 };
 
-
+//Function to convert from binary to decimal number
 int decimal(int num)
 {
     int rem, decimal = 0, i = 0;
@@ -23,6 +25,7 @@ int decimal(int num)
     return decimal;
 }
 
+//Function to convert from decimal to binary
 int binary(int num)
 {
     int rem;
@@ -38,7 +41,7 @@ int binary(int num)
 }
 
 
-
+//Substraction function
 void subGame()
 {
     system("CLS");
@@ -50,7 +53,7 @@ void subGame()
     cin >> input;
 
 
-
+    //Algorithm for substracting numbers
     int temp1, temp2, sub;
     int bin;
     temp1 = decimal(binary1);

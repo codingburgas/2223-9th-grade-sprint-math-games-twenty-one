@@ -13,7 +13,7 @@ const int binNum[15] = {
 };
 
 
-
+//Algorithm to add numbers
 int additionNums(int binary1, int binary2)
 {
     int i = 0, remainder = 0, sum[20];
@@ -35,7 +35,7 @@ int additionNums(int binary1, int binary2)
 }
 
 
-
+//Function for adding numbers
 void addGame()
 {
     system("CLS");

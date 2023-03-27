@@ -31,6 +31,7 @@ void multGame()
     int userInput;
     cin >> userInput;
     int result = 0, factor = 1;
+    //Algorithm for multiplying binary numbers
     while (secondRandomNum != 0)
     {
         int digit = secondRandomNum % 10;
@@ -54,6 +55,7 @@ void multGame()
     else
     {
         cout << "The answear is incorrect! Try again!" << endl;
+        system("pause");
         multGame();
     }
 }

@@ -17,8 +17,6 @@ const int screenHeight = 300.0;
 
 
 
-
-
 //Move function
 void move(Vector2 &position)
 {
@@ -58,6 +56,7 @@ int main()
     Vector2 position;
     position.x = 0;
     position.y = 0;
+    //Initialize window
     InitWindow(screenWidth, screenHeight, "twenty-one");
 
     //Load Textures and Images
@@ -160,6 +159,7 @@ int main()
         DrawTexture(mainCharacter, position.x, position.y, WHITE);
         EndDrawing();
     }
+    //unload Textures and close window
     UnloadTexture(mainCharacter);
     CloseWindow();
 }
