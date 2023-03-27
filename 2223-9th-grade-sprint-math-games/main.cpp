@@ -159,7 +159,7 @@ int main()
         DrawTexture(mainCharacter, position.x, position.y, WHITE);
         EndDrawing();
     }
-    //unload Textures and close window
+    //Unload Textures and close window
     UnloadTexture(mainCharacter);
     CloseWindow();
 }

@@ -5,7 +5,7 @@
 
 <hr>
 <h2> 📰About</h2>
-<p>Our game is mathematical puzzle, where you are using all your programming mathematical skills to solve troubles. The castle is in danger and you <b>gotta </b> save it.</p>
+<p>Our game is mathematical puzzle, where you are using all your programming mathematical skills to solve troubles. The castle is in danger and you <b> must </b> save it.</p>
 <p>Your mission in the game is to guess the right answer of the mathematic questions the castle gives you.</p>
 <p>This is the only way to save the <b>kingdom!</b></p>
 <hr>
@@ -26,17 +26,17 @@
     <a href="https://code.visualstudio.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png" alt="VS code logo" width=48px /></a>
     <a href="https://github.com/"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111612.png" alt="GitHub logo" width = "50"/></a>
     <a href="https://www.microsoft.com/en/microsoft-teams/group-chat-software"><img src="https://img.icons8.com/color/344/microsoft-teams.png" alt = "MS Teams logo" width="50px" /></a>
-    <a href="https://www.microsoft.com/bg-bg/microsoft-365/excel"><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg/826px-Microsoft_Office_Excel_%282019%E2%80%93present%29.svg.png" alt = "MS Excel logo" width = 50px /></a>
 </p>
 <h3> Used programming languages:</h3>
 <p align="left">
     <a href="https://www.cplusplus.com/"><img src="https://brandslogos.com/wp-content/uploads/thumbs/c-logo-vector.svg" alt="C++ logo" width="50px"/></a>
-    <a href="https://www.raylib.com/"><img src = "https://www.raylib.com/index.html" alt = "Raylib logo" width = 48px /></a>
+    <a href="https://www.raylib.com/"><img src = "https://upload.wikimedia.org/wikipedia/commons/f/f4/Raylib_logo.png" alt = "Raylib logo" width = 48px /></a>
 </p>
 <h3> Used applications for the documentation and presentation:</h3>
 <p align="left">
     <a href="https://www.microsoft.com/en-ww/microsoft-365/word"><img src="https://img.icons8.com/color/344/ms-word.png" alt="MS Word logo" width=48px /></a>
     <a href="https://www.microsoft.com/en-ww/microsoft-365/powerpoint"><img src="https://img.icons8.com/color/344/ms-powerpoint.png" alt="MS PowerPoint logo" width=48px /></a>
+     <a href="https://www.microsoft.com/bg-bg/microsoft-365/excel"><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg/826px-Microsoft_Office_Excel_%282019%E2%80%93present%29.svg.png" alt = "MS Excel logo" width = 48px /></a>
 </p>
 <hr>
 <h2 align = "center">🧒 Our Team</h2>

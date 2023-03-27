@@ -25,7 +25,7 @@ void conGame()
     cin >> userInput;
     int result = 0, counter = 0, remainder=0;
 
-    //Algorthm for converting numbers
+    //Algorithm for converting numbers
     while (randomNum != 0) {
         remainder = randomNum % 10;
         randomNum /= 10;
