@@ -57,7 +57,7 @@ int main()
     position.x = 0;
     position.y = 0;
     //Initialize window
-    InitWindow(screenWidth, screenHeight, "twenty-one");
+    InitWindow(screenWidth, screenHeight, "Binary King");
 
     //Load Textures and Images
     Texture2D mainCharacter = LoadTexture("images/binary_king.png");

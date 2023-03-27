@@ -41,19 +41,19 @@ int binary(int num)
 }
 
 
-//Substraction function
+//Function for subtraction
 void subGame()
 {
     system("CLS");
-    int binary1 = binNum[GetRandomValue(8, 15)];
+    int binary1 = binNum[GetRandomValue(8, 14)];
     int binary2 = binNum[GetRandomValue(0, 7)];
-    cout << "Welcome to substraction! Enter your answear: " << endl;
+    cout << "Welcome to thesubtraction level! Enter your answer: " << endl;
     cout << binary1 << " - " << binary2 << " = ";
     int input;
     cin >> input;
 
 
-    //Algorithm for substracting numbers
+    //Algorithm for subtracting numbers
     int temp1, temp2, sub;
     int bin;
     temp1 = decimal(binary1);
@@ -62,7 +62,7 @@ void subGame()
     bin = binary(sub);
     if (bin == input)
     {
-        cout << "Congratulations!" << endl;
+        cout << "Congratulations! You have completed the level successfully!" << endl;
     }
     else
     {

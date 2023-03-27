@@ -39,19 +39,20 @@ int additionNums(int binary1, int binary2)
 void addGame()
 {
     system("CLS");
-    int num1 = binNum[GetRandomValue(0, 15)];
-    int num2 = binNum[GetRandomValue(0, 15)];
-    cout << "Welcome to addition! Enter your answear: " << endl;
+    int num1 = binNum[GetRandomValue(0, 14)];
+    int num2 = binNum[GetRandomValue(0, 14)];
+    cout << "Welcome to the addition level! " << endl;
+    cout << "Here you have to solve the problem, using adition." << endl;
     cout << num1 << " + " << num2 << " = ";
     int input;
     cin >> input;
     if (additionNums(num1, num2) == input)
     {
-        cout << "The answear is correct!" << endl;
+        cout << "The answer is correct!" << endl;
     }
     else
     {
-        cout << "The answear is incorrect! Try again!" << endl;
+        cout << "The answer is incorrect! Try again!" << endl;
         system("pause");
         addGame();
     }

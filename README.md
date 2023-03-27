@@ -13,6 +13,12 @@
 <p>The old king's kingdom is in danger. The trolls are all over the place. It's your missionn to save the castle, only using your intelligence.</p>
 <h2> 📷Screenshots</h2>
 <img src="images/imageddd.png" alt = "screenshot">
+<h2>How to run</h2>
+<p>1. Install the repository</p>
+<p>2. Open the raylib folder, then the lib folder</p>
+<p>3. Copy the raylib.dll file, go back to the main directory</p>
+<p>4. Open the x64 folder, then the Debug folder and paste it there.</p>
+<hr>
 <h2> 🖥️Technologies </h2>
 <h3> Code editors and communication services: </h3>
 <p>
@@ -20,10 +26,12 @@
     <a href="https://code.visualstudio.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png" alt="VS code logo" width=48px /></a>
     <a href="https://github.com/"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111612.png" alt="GitHub logo" width = "50"/></a>
     <a href="https://www.microsoft.com/en/microsoft-teams/group-chat-software"><img src="https://img.icons8.com/color/344/microsoft-teams.png" alt = "MS Teams logo" width="50px" /></a>
+    <a href="https://www.microsoft.com/bg-bg/microsoft-365/excel"><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg/826px-Microsoft_Office_Excel_%282019%E2%80%93present%29.svg.png" alt = "MS Excel logo" width = 50px /></a>
 </p>
 <h3> Used programming languages:</h3>
 <p align="left">
     <a href="https://www.cplusplus.com/"><img src="https://brandslogos.com/wp-content/uploads/thumbs/c-logo-vector.svg" alt="C++ logo" width="50px"/></a>
+    <a href="https://www.raylib.com/"><img src = "https://www.raylib.com/index.html" alt = "Raylib logo" width = 48px /></a>
 </p>
 <h3> Used applications for the documentation and presentation:</h3>
 <p align="left">

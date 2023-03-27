@@ -19,12 +19,13 @@ void conGame()
     int userInput = 0;
     cout << "Welcome to the Convert level!" << endl;
     cout << "In this level you have to convert a binary number to a decimal number" << endl;
-    int randomNum = binNum[GetRandomValue(0, 15)];
+    int randomNum = binNum[GetRandomValue(0, 14)];
     cout << "The binary number that you have to convert is: " << randomNum << endl;
     cout << "Enter the number in decimal: ";
     cin >> userInput;
     int result = 0, counter = 0, remainder=0;
-    //Algoroth for converting numbers
+
+    //Algorthm for converting numbers
     while (randomNum != 0) {
         remainder = randomNum % 10;
         randomNum /= 10;
@@ -34,11 +35,12 @@ void conGame()
 
     if (result == userInput)
     {
-        cout << "Your answear is correct" << endl;
+        cout << "Your answer is correct" << endl;
     }
     else
     {
         cout << "You are incorrect! Try again!" << endl;
+        system("pause");
         conGame();
     }
 

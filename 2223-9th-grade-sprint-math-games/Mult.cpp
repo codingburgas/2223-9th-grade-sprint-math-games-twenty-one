@@ -22,10 +22,10 @@ const int binNum[15] =
 void multGame()
 {
     system("CLS");
-    int firstRandomNum = binNum[GetRandomValue(0, 15)];
-    int secondRandomNum = binNum[GetRandomValue(0, 15)];
-    cout << "\nWelcome! Now you have to multiply the first binary number that you see with the second one on your screen!" << endl;
-    cout << "Input your answear after the equals sign." << endl;
+    int firstRandomNum = binNum[GetRandomValue(0, 14)];
+    int secondRandomNum = binNum[GetRandomValue(0, 7)];
+    cout << "Welcome! Now you have to multiply the first binary number that you see with the second one on your screen!" << endl;
+    cout << "Enter your answer after the equals sign." << endl;
 
     cout << firstRandomNum << " x " << secondRandomNum << " = ";
     int userInput;
@@ -50,11 +50,11 @@ void multGame()
 
     if (userInput == result)
     {
-        cout << "Your answear is correct! Congratulations!" << endl;
+        cout << "Your answer is correct! Congratulations!" << endl;
     }
     else
     {
-        cout << "The answear is incorrect! Try again!" << endl;
+        cout << "The answer is incorrect! Try again!" << endl;
         system("pause");
         multGame();
     }
